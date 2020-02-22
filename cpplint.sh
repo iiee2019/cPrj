@@ -1,8 +1,8 @@
 #!/bin/bash
 #Program:
-# use cpplit to file1,file2
+# use cpplit to check file1,file2
 #History:
-#2019/12/31  jack  first  release
+#2020/02/20  jack  first  release
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/sbin:~/bin
 export PATH
 cpplint_path=/usr/local/lib/python2.7/dist-packages/cpplint.py
