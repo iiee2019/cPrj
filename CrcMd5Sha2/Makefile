@@ -4,7 +4,7 @@ LIBS = -lm  -lpthread -ldl
 OBJS = main.o \
 	sha256.o \
 	md5.o \
-	crc32.o 
+	crc_crc32.o 
 TARGET = calculate
 
 $(TARGET): $(OBJS)

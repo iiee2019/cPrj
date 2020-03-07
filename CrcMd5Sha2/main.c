@@ -6,7 +6,7 @@
 
 #include "sha256.h"
 #include "md5.h"
-#include "crc32.h"
+#include "crc_crc32.h"
 
 
 

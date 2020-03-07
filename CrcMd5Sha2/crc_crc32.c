@@ -6,7 +6,7 @@
 **Description: The source file of class crc32.
 */
 #include <stdlib.h>
-#include "crc32.h"
+#include "crc_crc32.h"
 static uint32_t crc32_tab[] =
 {
     0x00000000L, 0x77073096L, 0xee0e612cL, 0x990951baL, 0x076dc419L,
