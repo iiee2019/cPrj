@@ -9,6 +9,7 @@
 #include <math.h>
 #include <limits.h>
 #include <dirent.h>
+#include <stdint.h>
 
 #include "md5.h"
 
@@ -182,7 +183,7 @@ int add_bits(unsigned char * buf, size_t src_len)
         }
 
         buf[current_len] = 0x80;
-		*(unsigned long long *)(buf + dest_len - VAR_INPUT_LEN_SIZE) = (unsigned long long)src_len * BITS_PER_BYTE;
+		*(uint64_t *)(buf + dest_len - VAR_INPUT_LEN_SIZE) = (uint64_t)src_len * BITS_PER_BYTE;
 
         return times;
 }

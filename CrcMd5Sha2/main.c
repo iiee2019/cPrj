@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 	char* data=NULL;
 	if (strcmp(argv[2], "crc32") == 0){  
 
-		long lFileLen;
+		uint64_t lFileLen;
 		/*获取文件字节大小lFileLen*/
 		fseek(f, 0, SEEK_END);
 		lFileLen = ftell(f); 
@@ -57,7 +57,7 @@ int main(int argc, char **argv)
 		
 		/*获取文件字节大小lFileLen*/
 		fseek(f, 0, SEEK_END);
-		long lFileLen= ftell(f); 
+		uint64_t lFileLen= ftell(f); 
 		if(lFileLen > 0){
 			data = (char *)malloc((lFileLen+1)*sizeof(char));
 		}
